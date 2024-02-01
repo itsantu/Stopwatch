@@ -10,6 +10,7 @@
 <ul>
   <li>
     First, assigned variables to references to HTML elements based on their IDs. And initialized some values
+    
     ```javascript
     const minutes = document.querySelector('#minutes');
     const seconds = document.querySelector('#seconds');
@@ -22,11 +23,13 @@
   </li>
   <li>
     Second, declared a variable intervalId for initializing a unique id for "setInterval" function
+    
     ```javascript
     let intervalId
     ```
   </li>
   <li> The Actual function which updates the time and shows on the display area of the web page
+    
     ```javascript
     const updateTime = function () {
         minutes.innerHTML = min.toString().padStart(2, '0');
