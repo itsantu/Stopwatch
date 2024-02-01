@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch - A Basic JavaScript Project </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+        h1{
+            font-family: "Cute Font", sans-serif;
+            font-size: 160px;
+            font-weight: 500;
+            background-color: #212121;
+            color: white;
+            border-radius: 15px;
+        }
+        button{
+            font-family: "Cute Font", sans-serif;
+        }
+        body{
+            background-color: rgb(76, 76, 76);
+            text-align: center;
+        }
+        button{
+            color: white;
+            background-color: #212121;
+            font-size: 30px;
+            margin: 0 13px;
+            padding: 10px 25px;
+            border-radius: 10px;
+            transition: .2s;
+        }
+        button:hover{
+            background: transparent;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        @media screen and (max-width: 600px) {
+            h1{
+                font-size: 100px;
+            }
+            button{
+                font-size: 18px;
+                margin: 10px 15px;
+            }
+        }
+
+        @media screen and (max-width: 300px) {
+            h1{
+                font-size: 50px;
+            }
+            button{
+                font-size: 15px;
+                margin: 10px 15px;
+                padding: 8px 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <h1><span id="minutes">00</span>:<span id="seconds">00</span>:<span id="centi">00</span></h1>
+        <div id="btns">
+            <button id="start">START</button>
+            <button id="stop">STOP</button>
+            <button id="reset">RESET</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
